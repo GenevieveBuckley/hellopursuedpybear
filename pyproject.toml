@@ -1,0 +1,35 @@
+[tool.briefcase]
+project_name = "hellopursuedpybear"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/hellopursuedpybear"
+license = "BSD license"
+author = 'Jane Developer'
+author_email = "jane@example.com"
+
+[tool.briefcase.app.hellopursuedpybear]
+formal_name = "hellopursuedpybear"
+description = "My first application"
+icon = "src/hellopursuedpybear/resources/hellopursuedpybear"
+sources = ['src/hellopursuedpybear']
+requires = [
+    'ppb~=0.8.0',
+]
+
+
+[tool.briefcase.app.hellopursuedpybear.macOS]
+requires = []
+
+[tool.briefcase.app.hellopursuedpybear.linux]
+requires = []
+system_requires = []
+
+[tool.briefcase.app.hellopursuedpybear.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.hellopursuedpybear.iOS]
+requires = []
+
+[tool.briefcase.app.hellopursuedpybear.android]
+requires = []
